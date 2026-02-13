@@ -60,17 +60,15 @@ for n in range(N-1):
   eta_z = np.random.normal(0, 1)
 
   Vx[n+1] = (
-      Vx[n]
-      + (-gamma * Vx[n] + omega_c * Vy[n])* dt
-      + sigma * eta_x * np.sqrt(dt)
-  )
+        Vx[n]
+        + (-gamma * Vx[n] - omega_c * Vy[n]) * dt 
+        + sigma * eta_x * np.sqrt(dt)
 
 
   Vy[n+1] = (
-      Vy[n]
-      + (-gamma * Vy[n] + omega_c * Vx[n])* dt
-      + sigma * eta_y * np.sqrt(dt)
-  )
+        Vy[n]
+        + (-gamma * Vy[n] + omega_c * Vx[n]) * dt 
+        + sigma * eta_y * np.sqrt(dt)
 
   Vz[n+1] = (
       Vz[n]
