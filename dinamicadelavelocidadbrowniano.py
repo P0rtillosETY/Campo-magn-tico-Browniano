@@ -61,14 +61,14 @@ for n in range(N-1):
 
   Vx[n+1] = (
       Vx[n]
-      + (-gamma * Vy[n] + omega_c * Vy[n])* dt
+      + (-gamma * Vx[n] + omega_c * Vy[n])* dt
       + sigma * eta_x * np.sqrt(dt)
   )
 
 
   Vy[n+1] = (
       Vy[n]
-      + (-gamma * Vy[n] - omega_c * Vx[n])* dt
+      + (-gamma * Vy[n] + omega_c * Vx[n])* dt
       + sigma * eta_y * np.sqrt(dt)
   )
 
