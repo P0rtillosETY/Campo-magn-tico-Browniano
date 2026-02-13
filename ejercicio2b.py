@@ -37,8 +37,8 @@ def gillespie_simulation(Omega, t_max=200, r1_init=None, r2_init=0):
         # Propensidades correctas
         nu1 = alpha * g_R(r2 / Omega)
         nu2 = alpha * g_R(r1 / Omega)
-        nu3 = beta * r1
-        nu4 = beta * r2
+        nu3 = beta * r1 / Omega
+        nu4 = beta * r2 / Omega
 
         nu_total = nu1 + nu2 + nu3 + nu4
 
