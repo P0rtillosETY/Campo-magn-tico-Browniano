@@ -23,3 +23,9 @@ donde:
 - B es el campo magnético aplicado en la dirección z  
 - T es la temperatura  
 - dt es el paso temporal de integración numérica
+
+
+
+
+Ejercicio 2b
+simulación
